@@ -154,6 +154,7 @@
         .c-dc   { --accent: #5865F2; --glow: rgba(88, 101, 242, 0.4); }
         .c-yt   { --accent: #FF0000; --glow: rgba(255, 0, 0, 0.4); }
         .c-wa   { --accent: #25D366; --glow: rgba(37, 211, 102, 0.4); }
+.c-mc   { --accent: #FF8C1A; --glow: rgba(255, 140, 26, 0.4); }
         .c-dc2  { --accent: #5865F2; --glow: rgba(88, 101, 242, 0.4); }
     </style>
 </head>
@@ -185,10 +186,10 @@
                 bio: "Whats Up Guys!"
             },
             links: [
-                { name: 'TikTok', sub: 'Watch Clips', url: 'https://www.tiktok.com/@vellthic', icon: 'fa-tiktok', color: 'c-tt', type: 'wide' },
-                { name: 'Discord', sub: 'ArcaVels', url: 'https://discord.gg/zYB9JNuzWW', icon: 'fa-discord', color: 'c-dc', type: 'square' },
-                { name: 'YouTube', sub: 'Subscribe', url: '#', icon: 'fa-youtube', color: 'c-yt', type: 'square' },
-                { name: 'Jasa Setup Minecraft', sub: 'Mulai Rp25rb — Klik Buat Order via WhatsApp', url: 'https://wa.me/6285606581111?text=Halo%20kak%2C%20saya%20mau%20order%20jasa%20setup%20server%20Minecraft', icon: 'fa-solid fa-server', color: 'c-wa', type: 'wide' },
+                { name: 'TikTok', sub: 'Watch Clips', url: 'https://www.tiktok.com/@vellthic', icon: 'fa-brands fa-tiktok', color: 'c-tt', type: 'wide' },
+                { name: 'Discord', sub: 'ArcaVels', url: 'https://discord.gg/zYB9JNuzWW', icon: 'fa-brands fa-discord', color: 'c-dc', type: 'square' },
+                { name: 'YouTube', sub: 'Subscribe', url: '#', icon: 'fa-brands fa-youtube', color: 'c-yt', type: 'square' },
+                { name: 'Jasa Setup Minecraft', sub: 'Mulai Rp25rb — Klik Buat Order via WhatsApp', url: 'https://wa.me/6285606581111?text=Halo%20kak%2C%20saya%20mau%20order%20jasa%20setup%20server%20Minecraft', icon: 'fa-solid fa-cube', color: 'c-mc', type: 'wide' },
                 { name: 'Donate Me', sub: 'Click Me', url: 'https://sociabuzz.com/vellcy', icon: 'fa-solid fa-dollar-sign', color: 'c-wa', type: 'wide' }
             ]
         };
@@ -227,7 +228,7 @@
                 const cardClass = link.type === 'wide' ? 'link-card wide' : 'link-card';
                 container.innerHTML += `
                 <a href="${link.url}" target="_blank" class="${cardClass} ${link.color}">
-                    <div class="icon-box"><i class="fab ${link.icon}"></i></div>
+                    <div class="icon-box"><i class="${link.icon}"></i></div>
                     <div class="card-info">
                         <span class="card-title">${link.name}</span>
                         <span class="card-sub">${link.sub}</span>
